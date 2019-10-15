@@ -1,0 +1,16 @@
+- Criar pasta backend
+-yarn init -y
+-yarn add express
+// Express: ele é uma função para criar novo servidor (uma nova porta de entrada para receber requisições e respostas)
+-Todo codigo que vai ser mexido estara dentro da pasta SRC
+-yarn add nodemon -D  (-D significa que é para ser utilizado quando estiver em desenvolvimento)
+-yarn add mongoose
+-yarn add axios (Axios serve para fazer requisições de apis externas)
+-yarn add cors (Permitir que seja acessada por qualquer endereço )
+
+
+********* Front End *********
+yarn create react-app <nomedapasta>
+
+Gerenciador de rotas do React:
+yarn add react-router-dom

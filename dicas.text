@@ -1,0 +1,33 @@
+// Rota principal
+
+// Métodos HTTPS: GET / POST / PUT / DELETE
+// GET: Buscar alguma informação da API
+// O método POST também pode ser utilizado para enviar só que para FORMULARIOS
+// POST: Criar alguma entidade/registro dentro da API
+// PUT: Para editar alguma entidade/informação da API
+// DELETE: Para excluir alguma entidade/informação
+server.get('/', (req, res) => {
+    // req: Requisição / res: resposta
+    // query: contém todos os parametros enviados pela URL da rota
+    // Utilizando o template string: `${Texto ${variavel}}`
+    // Json: utilizado para enviar um objeto
+    return res.json({ message: `Hello ${req.query.name}`});
+})
+
+// Porta em que o servidor será escutado
+server.listen(3333);
+
+Todas vez que utilizar o await em um função deve utilizar o  Async antes
+Para mudar o nome de uma variavel na destruturação é só utilizar o: 
+const {avatar_url:avatar}
+
+
+***** FrontEnd ***
+
+*Em todos os componentes o React deve ser importado:
+import React from 'react';
+
+Para colocar uma variavel dentro do HTML utiliza {} exemplo:
+<img src="logo" /> --> Forma html
+<img src={logo} /> --> Forma do react
+
