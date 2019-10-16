@@ -31,3 +31,16 @@ Para colocar uma variavel dentro do HTML utiliza {} exemplo:
 <img src="logo" /> --> Forma html
 <img src={logo} /> --> Forma do react
 
+Quando for criar uma Rota é nescessario colocar o exact (para verificar se é realmente aquela rota):
+<BrowserRouter>
+    <Route path="/" exact component={Login}/>
+    <Route path="/main" component={Main}/>
+</BrowserRouter>
+
+Para guarda o valor de um input:
+Além de importar o react é nescessario importar o useState:
+import React, { useState } from 'react';
+
+setUsername: Toda vez que você precisar modificar o valor de Username essa função tem que ser chamada
+username: Toda vez que você precisar acessar o valor de username, chame está função
+const [username, setUsername] = useState('');
